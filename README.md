@@ -1,4 +1,8 @@
-### Hi there 👋
+### Hallo 👋
+
+- 🔭 I’m currently working on @bluenovaio and @shoprunner
+- 📫 How to reach me: [https://twitter.com/zrosenbauer](https://twitter.com/zrosenbauer)
+- 😄 Pronouns: He/Him/His
 
 <!--
 **zrosenbauer/zrosenbauer** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.

@@ -1,9 +1,9 @@
 ### Hallo 👋
 
-- 🤖 I'm currently the Head of CloudOps at [@shoprunner](https://github.com/shoprunner)
-- 🔭 I’m working on building tools for developers at [@bluenovaio](https://github.com/bluenovaio)
-- 📫 How to reach me: [https://twitter.com/zrosenbauer](https://twitter.com/zrosenbauer)
-- 😄 Pronouns: He/Him/His
+- 🤖  I'm currently the Head of CloudOps at [@shoprunner](https://github.com/shoprunner)
+- 🔭  I’m working on building tools for developers at [@bluenovaio](https://github.com/bluenovaio)
+- 📫  How to reach me: [https://twitter.com/zrosenbauer](https://twitter.com/zrosenbauer)
+- 😄  Pronouns: He/Him/His
 
 <!--
 **zrosenbauer/zrosenbauer** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.

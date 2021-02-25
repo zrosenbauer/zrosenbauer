@@ -2,7 +2,7 @@
 
 - 🤖 I'm currently the Head of CloudOps at [@shoprunner](https://github.com/shoprunner)
 - 🔭 I’m working on building tools for developers at [@bluenovaio](https://github.com/bluenovaio)
-- 🏈 I'm a former (American) football player (fullback) turned coder (yes from head butting linebackers to head butting segfaults)
+- 🏈 I'm a former (American) football player (fullback) turned coder (yes from headbutting linebackers to headbutting segfaults)
 - 🕶️ I currently reside in Austin, TX enjoying some much needed sun
 - 🧦 I used to live in the Windy City where I got my "tech" sealegs
 - 🐻 My heart is forever in Berlin (2-3x a year you can find me parked at [St. Oberholz](https://sanktoberholz.de/) enjoying some Kaffee)

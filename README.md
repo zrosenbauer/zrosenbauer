@@ -1,6 +1,6 @@
 ### Hallo 👋
 
-- 🤖 I'm currently the Head of CloudOps at [@shoprunner](https://github.com/shoprunner)
+- 🤖 I'm currently lead Cloud, Site Reliablity, and Security Engineering at [@shoprunner](https://github.com/shoprunner)
 - 🔭 I’m working on building tools for developers at [@bluenovaio](https://github.com/bluenovaio)
 - 🏈 I'm a former (American) football player (fullback) turned coder (yes from headbutting linebackers to headbutting segfaults)
 - 🕶️ I currently reside in Austin, TX enjoying some much needed sun

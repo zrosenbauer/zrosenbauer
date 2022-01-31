@@ -1,9 +1,9 @@
 ### Hallo 👋
 
-- 🤖 I'm currently Director of Operations Platform (SRE, Cloud, Security & IT) at [@fedex-dataworks](https://github.com/fedex)
-- 🔭 I’m working on building tools for developers at [@bluenovaio](https://github.com/bluenovaio)
+- 🤖 I'm currently Co-founder and CTO at [@bluenovaio](https://github.com/bluenovaio) 
 - 🏈 I'm a former (American) football player (fullback) turned coder (yes from headbutting linebackers to headbutting segfaults)
-- 🕶️ I currently reside in St Paul, MN enjoying being back in the midwest
+- 🕶️ I currently reside in Twin Cities, MN & enjoying being back in the midwest
+- 🗽 I'm moving to NYC end of 2022 and excited to get to the big 🍎
 - 🧦 I used to live in the Windy City where I got my "tech" sealegs
 - 🚜 I enjoy working on antique tractors (& farming if they let me)
 - 🐻 My heart is forever in Berlin (2-3x a year you can find me parked at [St. Oberholz](https://sanktoberholz.de/) enjoying some Kaffee)

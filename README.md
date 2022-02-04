@@ -1,3 +1,5 @@
+![zrosenbauer's github stats](https://github-readme-stats.vercel.app/api?username=zrosenbauer&show_icons=true&theme=dracula)
+
 ### Hallo 👋
 
 - 🤖 I'm currently Co-founder and CTO at [@bluenovaio](https://github.com/bluenovaio) 

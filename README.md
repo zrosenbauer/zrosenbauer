@@ -16,8 +16,8 @@
 
 ### 👋 Hallo
 
+- :zap: I'm the CTO & Co-Founder of [CodeReviews.ai](https://codereviews.ai)
 - 🏈 I'm a former (American) football player (fullback) turned coder (yes from headbutting linebackers to headbutting segfaults)
-- ⛄ I currently reside in Twin Cities, MN & enjoying being back in the midwest
 - 🗽 I'm moving to NYC end of 2022 and excited to get to the big 🍎
 - 🧦 I used to live in the Windy City where I got my "tech" sealegs
 - 🚜 I enjoy working on antique tractors (& farming if they let me)

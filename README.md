@@ -21,7 +21,7 @@
 
 ### 👋 Hallo
 
-- :zap: I'm the CTO & Co-Founder of [CodeReviews.ai](https://codereviews.ai)
+- 🥷 I'm the CTO & Co-Founder of [Joggr](https://joggr.io) (we are sort of in stealth...)
 - 🏈 I'm a former (American) football player (fullback) turned coder (yes from headbutting linebackers to headbutting segfaults)
 - 🗽 I'm moving to NYC end of 2022 and excited to get to the big 🍎
 - 🧦 I used to live in the Windy City where I got my "tech" sealegs

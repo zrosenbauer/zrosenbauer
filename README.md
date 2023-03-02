@@ -7,25 +7,28 @@
   <a href="https://www.linkedin.com/in/zacrosenbauer/">
     <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"/>
   </a>
+  <a href="https://www.polywork.com/zac_rosenbauer">
+    <img src="https://img.shields.io/badge/polywork-543DE0?style=for-the-badge&logo=polywork&logoColor=white" alt="Polywork Badge />
+  </a>
   <a href="https://twitter.com/zrosenbauer">
     <img src="https://img.shields.io/badge/Twitter-blue?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter Badge"/>
-  </a>
-</div>
-<div id="badges-extra" align="center">
-  <a href="https://www.codementor.io/@zrosenbauer?refer=badge">
-    <img src="https://www.codementor.io/m-badges/zrosenbauer/find-me-on-cm-b.svg" alt="Contact me on CodeMentor" />
   </a>
 </div>
 
 ----
 
 ### 👋 Hallo
+                                                                                                                             
+You'll find that my life can be summed up in approximately 10 bullet points.
 
-- 🥷 I'm the CTO & Co-Founder of [Joggr](https://joggr.io) (we are sort of in stealth...)
+- 🏃 I'm the CTO & Co-Founder of [Joggr](https://joggr.io) (we are sort of in stealth...)
+- 💍 Married my soulmate, Sarah 👩‍❤️‍👨
+- 🐶 Have a wonderful puppers, named Mocha                                                                                              
 - 🏈 I'm a former (American) football player (fullback) turned coder (yes from headbutting linebackers to headbutting segfaults)
-- 🗽 I'm moving to NYC end of 2022 and excited to get to the big 🍎
+- 🗽 I live in NYC, currently trudging around Manhattan 🏙️
 - 🧦 I used to live in the Windy City where I got my "tech" sealegs
-- 🚜 I enjoy working on antique tractors (& farming if they let me)
+- 🌽 I was raised in rural Ohio (in the middle of a cornfield)                                             
+- 🚜 I enjoy working on antique tractors (& farming if they let me...)
 - 🐻 My heart is forever in Berlin (2-3x a year you can find me parked at [St. Oberholz](https://sanktoberholz.de/) enjoying some Kaffee)
 - 📫 How to reach me: [https://twitter.com/zrosenbauer](https://twitter.com/zrosenbauer)
 - 😄 Pronouns: He/Him/His

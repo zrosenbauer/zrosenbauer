@@ -21,7 +21,7 @@
                                                                                                                              
 You'll find that my life can be summed up in approximately 10 bullet points.
 
-- 🏃 I'm the CTO & Co-Founder of [Joggr](https://joggr.io) (we are sort of in stealth...)
+- 🏃 I'm the CTO & Co-Founder of [Joggr](https://joggr.io)
 - 💍 Married my soulmate, Sarah 👩‍❤️‍👨
 - 🐶 Have a wonderful puppers, named Mocha                                                                                              
 - 🏈 I'm a former (American) football player (fullback) turned coder (yes from headbutting linebackers to headbutting segfaults)

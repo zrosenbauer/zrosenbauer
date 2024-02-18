@@ -23,6 +23,7 @@ You'll find that my life can be summed up in approximately 10 bullet points.
 - 🐶 Have a wonderful puppers, named Mocha                                                                                              
 - 🏈 I'm a former (American) [football player](https://www.youtube.com/watch?v=KYwfzejSyxQ&t=260s) (fullback) turned coder (yes from headbutting linebackers to headbutting segfaults)
 - 🗽 I live in NYC, currently trudging around Manhattan 🏙️
+- 🥊 I train Krav Maga and you can usually find me on the mat at least a couple times per week
 - 🧦 I used to live in the Windy City where I got my "tech" sealegs
 - 🌽 I was raised in rural Ohio (in the middle of a cornfield)                                             
 - 🚜 I enjoy working on antique tractors (& farming if they let me...)

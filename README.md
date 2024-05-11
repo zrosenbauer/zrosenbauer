@@ -28,7 +28,7 @@ You'll find that my life can be summed up in approximately 10 bullet points.
 - 🌽 I was raised in rural Ohio (in the middle of a cornfield)                                             
 - 🚜 I enjoy working on antique tractors (& farming if they let me...)
 - 🐻 My heart is forever in Berlin (2-3x a year you can find me parked at [St. Oberholz](https://sanktoberholz.de/) enjoying some Kaffee)
-- 📫 How to reach me: [https://twitter.com/zrosenbauer](https://twitter.com/zrosenbauer)
+- 📫 How to reach me: [zrosenbauer.com](https://zrosenbauer.com/)
 - 😄 Pronouns: He/Him/His
 
 

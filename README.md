@@ -4,30 +4,27 @@
 </div>
 
 <div id="badges" align="center">
-  <a href="https://www.linkedin.com/in/zacrosenbauer/">
-    <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"/>
-  </a>
-  <a href="https://twitter.com/zrosenbauer">
-    <img src="https://img.shields.io/badge/X-black?style=for-the-badge&logo=x&logoColor=white" alt="X Badge"/>
-  </a>
+  <a href="https://zrosenbauer.com" color="transparent"><img src="https://img.shields.io/badge/zrosenbauer.com-black?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Website Badge" /></a>&nbsp;
+  <a href="https://www.linkedin.com/in/zacrosenbauer/"><img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"/></a>&nbsp;
+  <a href="https://twitter.com/zrosenbauer"><img src="https://img.shields.io/badge/X-black?style=for-the-badge&logo=x&logoColor=white" alt="X Badge"/></a>
 </div>
 
 ----
 
 ### 👋 Hallo
                                                                                                                              
-You'll find that my life can be summed up in approximately 10 bullet points.
+You'll find that my life can be summed up in approximately 10ish bullet points.
 
-- 🏃 I'm the CTO & Co-Founder of [Joggr](https://joggr.io)
 - 💍 Married my soulmate, Sarah 👩‍❤️‍👨
 - 🐶 Have a wonderful puppers, named Mocha                                                                                              
-- 🏈 I'm a former (American) [football player](https://www.youtube.com/watch?v=KYwfzejSyxQ&t=260s) (fullback) turned coder (yes from headbutting linebackers to headbutting segfaults)
 - 🗽 I live in NYC, currently trudging around Manhattan 🏙️
+- 🏃 I'm the CTO & Co-Founder of [Joggr](https://joggr.io)
+- 🏈 I'm a former (American) [football player](https://www.youtube.com/watch?v=KYwfzejSyxQ&t=260s) (fullback) turned coder (yes from headbutting linebackers to headbutting segfaults)
 - 🥊 I train Krav Maga and you can usually find me on the mat at least a couple times per week
 - 🧦 I used to live in the Windy City where I got my "tech" sealegs
 - 🌽 I was raised in rural Ohio (in the middle of a cornfield)                                             
 - 🚜 I enjoy working on antique tractors (& farming if they let me...)
-- 🐻 My heart is forever in Berlin (2-3x a year you can find me parked at [St. Oberholz](https://sanktoberholz.de/) enjoying some Kaffee)
+- 🐻 My heart is forever in Berlin (2-3x a year, barring a pandemic, you can find me parked at [St. Oberholz](https://sanktoberholz.coffee/) enjoying some Kaffee)
 - 📫 How to reach me: [zrosenbauer.com](https://zrosenbauer.com/)
 - 😄 Pronouns: He/Him/His
 
@@ -35,6 +32,8 @@ You'll find that my life can be summed up in approximately 10 bullet points.
 ----
 
 ### 💻 Tools
+
+These are some of the tools I love and use everyday.
 
 <img src="https://github.com/devicons/devicon/blob/master/icons/nodejs/nodejs-original.svg" title="NodeJS" alt="NodeJS" width="40" height="40"/>&nbsp;
 <img src="https://github.com/devicons/devicon/blob/master/icons/typescript/typescript-original.svg" title="TypeScript" alt="TypeScript" width="40" height="40"/>&nbsp;

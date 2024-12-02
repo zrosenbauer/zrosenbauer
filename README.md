@@ -4,9 +4,9 @@
 </div>
 
 <div id="badges" align="center">
-  <a href="https://zrosenbauer.com"><img src="https://img.shields.io/badge/zrosenbauer.com-black?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Website Badge" /></a>&nbsp;
-  <a href="https://www.linkedin.com/in/zacrosenbauer/"><img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"/></a>&nbsp;
-  <a href="https://twitter.com/zrosenbauer"><img src="https://img.shields.io/badge/X-black?style=for-the-badge&logo=x&logoColor=white" alt="X Badge"/></a>
+  <a href="https://zrosenbauer.bsky.social"><img src="https://img.shields.io/badge/BlueSky-208BFF?style=for-the-badge&logo=bluesky&logoColor=white" alt="BlueSky Badge"/></a>&nbsp;
+  <a href="https://zrosenbauer.com"><img src="https://img.shields.io/badge/zrosenbauer.com-7268F0?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Website Badge" /></a>&nbsp;
+  <a href="https://www.linkedin.com/in/zacrosenbauer/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"/></a>
 </div>
 
 ----

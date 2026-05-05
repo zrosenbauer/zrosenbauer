@@ -17,7 +17,7 @@ You'll find that my life can be summed up in approximately 10ish bullet points.
 
 - 💍 Married my soulmate, Sarah 👩‍❤️‍👨
 - 🐶 Have a wonderful puppers, named Mocha                                                                                              
-- 🗽 I live in NYC, currently trudging around Manhattan 🏙️
+- 🗽 I live in NYC, currently trudging around Queens 🏙️
 - 🏃 I'm the CTO & Co-Founder of [Joggr](https://joggr.io)
 - 🏈 I'm a former (American) [football player](https://www.youtube.com/watch?v=KYwfzejSyxQ&t=260s) (fullback) turned coder (yes from headbutting linebackers to headbutting segfaults)
 - 🥊 I train in multiple martial arts/self defense systems and you can usually find me on the mat at least a couple times per week

@@ -20,7 +20,7 @@ You'll find that my life can be summed up in approximately 10ish bullet points.
 - 🗽 I live in NYC, currently trudging around Manhattan 🏙️
 - 🏃 I'm the CTO & Co-Founder of [Joggr](https://joggr.io)
 - 🏈 I'm a former (American) [football player](https://www.youtube.com/watch?v=KYwfzejSyxQ&t=260s) (fullback) turned coder (yes from headbutting linebackers to headbutting segfaults)
-- 🥊 I train Krav Maga and you can usually find me on the mat at least a couple times per week
+- 🥊 I train in multiple martial arts/self defense systems and you can usually find me on the mat at least a couple times per week
 - 🧦 I used to live in the Windy City where I got my "tech" sealegs
 - 🌽 I was raised in rural Ohio (in the middle of a cornfield)                                             
 - 🚜 I enjoy working on antique tractors (& farming if they let me...)

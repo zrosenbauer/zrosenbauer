@@ -29,11 +29,12 @@ the workspace structure and will produce orphaned files.**
   them as throwaway working copies.
 - Every workspace renders to its own `./output/` directory next to the
   YAMLs. `**/output/` is gitignored globally.
-- Each workspace has a `fonts/` symlink pointing at the repo's shared
-  `fonts/` (Geist Mono variable + Geist Pixel: Circle/Grid/Line/Square/
-  Triangle). Reference them in `design.yaml` as `Geist Mono` or
-  `Geist Pixel <Style>`. The generator creates the symlink automatically
-  for tailored copies.
+- Each workspace owns its own `fonts/` directory (real files). Available
+  families: `Geist` (sans), `Geist Mono`, and `Geist Pixel <Circle|Grid|
+  Line|Square|Triangle>`. Reference them in `design.yaml` by family name.
+  Primary uses Geist Sans body + Geist Mono section titles — sans for
+  readability, mono for the techy signal. The generator copies the source
+  template's `fonts/` into each tailored workspace automatically.
 
 ### Step 1 — Disambiguate intent before doing anything
 
@@ -179,9 +180,10 @@ Output lands in `<workspace>/output/` (PDF + Typst + Markdown + HTML + PNGs).
 - **Don't** delete `settings.yaml`'s `render_command: {}` line — see above.
 - **Don't** edit anything under `resumes/dist/` — that directory was
   removed; if you see one it's a stale artifact that should be deleted.
-- **Don't** delete or replace a workspace's `fonts` symlink. It points at
-  the repo's shared font dir; replacing it with a copy duplicates ~1.2 MB
-  per workspace.
+- **Don't** delete a workspace's `fonts/` directory. Each workspace owns
+  its fonts as real files (~1.2 MB) so it stays self-contained. If you
+  need to update a font, replace the file in place; the generator copies
+  on clone, not symlinks.
 
 ### Where to read next
 

@@ -65,13 +65,16 @@ module.exports = function generator(plop) {
           path: "{{turbo.paths.root}}/.tailored/{{name}}/package.json",
           templateFile: "templates/_meta/package.json.hbs",
         },
-        // Symlink the workspace's `fonts/` to the shared repo fonts dir so
-        // rendercv's auto-discovery (`fonts/` next to cv.yaml) finds Geist
-        // Mono / Pixel without duplicating the font binaries per workspace.
-        function linkFonts(_answers) {
+        // Copy the source template's `fonts/` directory into the new
+        // workspace as real files. RenderCV needs `fonts/` adjacent to the
+        // cv.yaml; each workspace owns its own copy (~1.2 MB) so it's
+        // self-contained and never depends on a sibling.
+        function copyFonts(_answers) {
+          const src = path.join(repoRoot(), "resumes", _answers.template, "fonts");
           const dest = path.join(repoRoot(), ".tailored", _answers.name, "fonts");
-          if (!fs.existsSync(dest)) fs.symlinkSync("../../fonts", dest);
-          return `Linked .tailored/${_answers.name}/fonts -> ../../fonts`;
+          if (!fs.existsSync(src)) return `No fonts/ in resumes/${_answers.template}; skipped.`;
+          fs.cpSync(src, dest, { recursive: true });
+          return `Copied resumes/${_answers.template}/fonts → .tailored/${_answers.name}/fonts`;
         },
         function summary(_answers) {
           return [

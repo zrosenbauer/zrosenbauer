@@ -22,12 +22,6 @@ This is a pnpm + Turborepo monorepo for personal artifacts. Two things live here
 │       └── SKILL.md                # auto-discovered by OpenCode; symlinked into .claude/
 ├── .claude/skills/                 # Claude Code's skills dir
 │   └── rendercv -> ../../.agents/skills/rendercv   # symlink (committed)
-├── fonts/                          # shared font files (Geist family)
-│   ├── Geist[wght].ttf             # Geist Sans variable, all weights
-│   ├── Geist-Italic[wght].ttf
-│   ├── GeistMono[wght].ttf         # Geist Mono variable, all weights
-│   ├── GeistMono-Italic[wght].ttf
-│   └── GeistPixel-{Circle,Grid,Line,Square,Triangle}.ttf
 ├── turbo/generators/
 │   ├── config.js                   # `turbo gen resume` generator (clones a template)
 │   └── templates/_meta/            # handlebars template for the cloned package.json
@@ -40,6 +34,7 @@ This is a pnpm + Turborepo monorepo for personal artifacts. Two things live here
 │       ├── design.yaml             # theme/typography
 │       ├── locale.yaml             # locale strings
 │       ├── settings.yaml           # render settings (incl. `render_command: {}`)
+│       ├── fonts/                  # Geist family (Sans + Mono + Pixel) — committed
 │       └── output/                 # rendered PDF/HTML/MD/PNG/Typst (gitignored)
 └── .tailored/                      # gitignored at repo root
     └── <name>/                     # @resume/<name> — cloned from a template,
@@ -127,7 +122,9 @@ Each resume's `package.json` pins `rendercv[full]==2.8` on Python 3.12 via `uvx`
 
 ### Fonts
 
-The repo bundles the full **Vercel Geist** family under `fonts/` at the repo root (MIT licensed — committing binaries is fine):
+**Each workspace owns its own `fonts/` directory** — real `.ttf` files, no symlinks, no shared root dir. RenderCV requires `fonts/` adjacent to the input YAML; this layout keeps each workspace self-contained (you can `cp -r resumes/primary somewhere/` and it'll render anywhere with `uv` available).
+
+The committed templates ship with the full **Vercel Geist** family (MIT licensed — ~1.2 MB per workspace, fine to commit):
 
 | Family name (in `design.yaml`)                   | Files                                               | Use for                                          |
 | ------------------------------------------------ | --------------------------------------------------- | ------------------------------------------------ |
@@ -135,7 +132,7 @@ The repo bundles the full **Vercel Geist** family under `fonts/` at the repo roo
 | `Geist Mono`                                     | `GeistMono[wght].ttf`, `GeistMono-Italic[wght].ttf` | Section titles, code, accents (techy signal)     |
 | `Geist Pixel {Circle,Grid,Line,Square,Triangle}` | five `.ttf` files                                   | One-off pixel accents (rarely body text)         |
 
-Each resume workspace gets a `fonts/` symlink pointing at `../../fonts/`. RenderCV/Typst auto-discover any font file in a `fonts/` dir next to the input YAML, so workspaces just reference the family name. The primary uses **Geist Sans body + Geist Mono section titles** — sans for readability, mono for the techy signal:
+Primary uses **Geist Sans body + Geist Mono section titles** — sans for readability, mono for the techy signal:
 
 ```yaml
 design:
@@ -148,12 +145,16 @@ design:
       section_titles: Geist Mono
 ```
 
-The generator (`pnpm resume:new`) creates the same `fonts -> ../../fonts` symlink in each tailored copy. To refresh the bundled fonts (e.g. when Vercel updates them):
+The generator (`pnpm resume:new`) copies the source template's `fonts/` into the new tailored workspace as part of cloning, so `.tailored/<name>/` is also self-contained. The duplicated bytes don't bloat git because `.tailored/` is gitignored.
+
+To refresh the bundled fonts (e.g. when Vercel updates them) for a specific template:
 
 ```bash
-curl -sL "https://raw.githubusercontent.com/vercel/geist-font/main/fonts/GeistMono/variable/GeistMono%5Bwght%5D.ttf" -o "fonts/GeistMono[wght].ttf"
-# repeat for the other eight files; see git history for the exact list
+curl -sL "https://raw.githubusercontent.com/vercel/geist-font/main/fonts/GeistMono/variable/GeistMono%5Bwght%5D.ttf" -o "resumes/primary/fonts/GeistMono[wght].ttf"
+# repeat for the other eight files in resumes/<template>/fonts/
 ```
+
+If a future need calls for shared, non-workspace assets (sample cover-letter snippets, photos, etc.), use `resumes/_assets/` — the leading underscore keeps it out of pnpm's workspace glob.
 
 ### Editing YAMLs
 

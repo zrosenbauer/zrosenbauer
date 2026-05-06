@@ -1,114 +1,123 @@
 # Resumes
 
-This directory holds **resume templates** built with [RenderCV](https://docs.rendercv.com/). Each subdirectory is a committed pnpm workspace (`@resume/<name>`) that doubles as:
+[RenderCV](https://docs.rendercv.com/)-based resume sources for Zac Rosenbauer.
 
-- a real, renderable resume, and
-- a starting point you clone whenever you tailor a resume for a specific company or role.
+## Summary
 
-The clone goes into `.tailored/<name>/` at the repo root (gitignored), where you edit the YAML. Every workspace — template or tailored — renders into its own local `output/` directory.
+Two flavors live in this repo:
 
-## Layout
+- **Templates** — `resumes/<name>/` (committed). Long-lived baseline resumes maintained over time. `primary` is the canonical one.
+- **Tailored copies** — `.tailored/<name>/` at the repo root (gitignored). Per-application clones of a template, edited for a specific company or role.
 
-```
-resumes/
-├── README.md              # this file
-└── primary/               # @resume/primary — base template
-    ├── package.json       # render/watch/clean scripts (uvx → rendercv 2.8)
-    ├── cv.yaml            # content: name, headline, sections, bullets
-    ├── design.yaml        # theme, fonts, colors, spacing
-    ├── locale.yaml        # locale strings (months, "present", etc.)
-    ├── settings.yaml      # render settings (incl. required `render_command: {}`)
-    └── output/            # rendered PDF/HTML/MD/PNG/Typst (gitignored)
-```
+Each is a pnpm workspace (`@resume/<name>`) and renders to its own local `output/` directory (PDF + Typst + Markdown + HTML + PNGs).
 
-Tailored copies live elsewhere:
+## Setup
 
-```
-.tailored/                 # gitignored at repo root
-└── <name>/                # @resume/<name> — same shape as resumes/primary,
-    ├── ...                # cloned YAMLs, edited per-application
-    └── output/            # local renders
-```
+Prerequisites:
 
-## Common commands
+- **Node 20+** and **pnpm 10+**
+- **`uv`** on PATH ([uv install](https://docs.astral.sh/uv/getting-started/installation/)) — used by `uvx` to run RenderCV without a global Python install.
 
-Run from the repo root:
+One-time:
 
 ```bash
-pnpm resume:new        # clone a template into .tailored/<name>/  (interactive, via turbo gen)
-pnpm resume:render     # render every resume sequentially (pnpm -r filter)
-pnpm resume:watch      # watch + rerender on YAML changes (pnpm -r --parallel)
-pnpm resume:clean      # remove every workspace's output/ dir
+pnpm install
 ```
 
-Single-resume operations:
+That's it — no Python venv, no global RenderCV install. The first render will pull `rendercv[full]==2.8` via `uvx` and cache it.
+
+## Usage
+
+### Render
 
 ```bash
-pnpm --filter @resume/primary render
-pnpm --filter @resume/<name>  render
+pnpm resume:render                  # render every resume sequentially
+pnpm resume:watch                   # watch + auto-rerender on YAML changes (parallel)
+pnpm --filter @resume/primary render # one resume only
+pnpm resume:clean                   # remove every workspace's output/ dir
+
+open resumes/primary/output/Zac_Rosenbauer_CV.pdf
 ```
 
-Or from inside a resume's workspace dir:
+Or from inside a workspace directory: `pnpm render` / `pnpm watch` / `pnpm clean`.
+
+### Tailor a template for an application
 
 ```bash
-pnpm render
-pnpm watch
-pnpm clean
+pnpm resume:new
+# prompts: which template to clone? + new kebab-case name
 ```
 
-## Cloning a template (`pnpm resume:new`)
-
-The generator at `turbo/generators/config.js` runs through these prompts:
-
-1. **Template** — pick any directory in `resumes/`.
-2. **Name** — kebab-case, e.g. `acme`, `recruiter-foo`. `_template` and `output` are reserved; existing names under `.tailored/` are rejected.
-
-It then:
-
-- Copies `cv.yaml` / `design.yaml` / `locale.yaml` / `settings.yaml` from `resumes/<template>/` into `.tailored/<name>/` byte-for-byte.
-- Writes a templated `package.json` (`@resume/<name>`) with the render scripts. Renders go to `.tailored/<name>/output/` — same shape as the templates.
-
-Non-interactive form (positional args = prompts in order):
+Non-interactive equivalent:
 
 ```bash
-pnpm turbo gen resume --args "<template>" "<name>"
-# e.g.
 pnpm turbo gen resume --args "primary" "acme"
 ```
 
-After scaffolding, edit `.tailored/<name>/cv.yaml` to tailor the resume, then render.
+The generator copies the four YAML files from `resumes/<template>/` byte-for-byte into `.tailored/<name>/`, writes a templated `package.json`, and creates a `fonts` symlink. Edit `.tailored/<name>/cv.yaml` for the role, then render.
 
-## Adding a new committed template
-
-Templates are just normal workspaces, so to add one (e.g. a leadership-focused base):
+### Add a new committed template
 
 ```bash
-cp -r resumes/primary resumes/leadership
+cp -r resumes/primary resumes/<new-name>
+# edit resumes/<new-name>/package.json: rename @resume/primary → @resume/<new-name>
+pnpm install
 ```
 
-Then edit `resumes/leadership/package.json` — rename `@resume/primary` → `@resume/leadership`. The render scripts use `--output-folder output` so no path changes are needed.
+The generator will offer it as a clone choice on the next run.
 
-Run `pnpm install` to refresh pnpm's workspace graph. The generator will offer it as a choice on the next run.
+### Edit content & design
 
-## Fonts
+Each workspace has four YAML files:
 
-The repo bundles the full **Vercel Geist** family under `fonts/` at the repo root: Geist Sans, Geist Mono (both variable, all weights + italic), and 5 Geist Pixel styles. Each workspace has a `fonts -> ../../fonts` symlink so RenderCV/Typst auto-discover them.
+| File            | Purpose                                                          |
+| --------------- | ---------------------------------------------------------------- |
+| `cv.yaml`       | Content: name, sections, bullets, experience, education, etc.    |
+| `design.yaml`   | Theme, fonts, colors, spacing, entry templates.                  |
+| `locale.yaml`   | Locale strings (month names, "present", etc.).                   |
+| `settings.yaml` | Render settings — must include `render_command: {}` (see below). |
 
-Reference fonts in `design.yaml` by family name:
+Reference `resumes/primary/` for working examples. For fields that aren't in primary, see [docs.rendercv.com](https://docs.rendercv.com/).
 
-- `Geist` — readable sans, use for body / name / headline / connections.
-- `Geist Mono` — wider techy mono, use for section titles or accents.
-- `Geist Pixel Circle` / `Grid` / `Line` / `Square` / `Triangle` — pixel accents (rare; body text isn't readable in pixel).
+### Fonts
 
-**Primary defaults to Geist Sans body + Geist Mono section titles** — readable body with a techy signal in the headers. Tweak `design.yaml`'s `typography.font_family` to mix differently.
+Each workspace ships its own `fonts/` directory with the **Vercel Geist** family: **Geist** (sans, variable), **Geist Mono** (variable), and 5 **Geist Pixel** styles (Circle, Grid, Line, Square, Triangle). RenderCV auto-discovers fonts in `fonts/` next to the input YAML, so just reference the family name in `design.yaml`:
 
-The generator creates the symlink for tailored copies automatically; it's an untracked file in `.tailored/<name>/` that resolves to the repo's shared `fonts/` dir.
+```yaml
+design:
+  typography:
+    font_family:
+      body: Geist
+      section_titles: Geist Mono
+```
 
-## Editing tips
+Primary uses Geist Sans body + Geist Mono section titles for readable body with a techy header signal. Templates are self-contained — `cp -r resumes/primary <anywhere>` and it'll render. The generator copies `fonts/` into each new tailored workspace automatically.
 
-- Keep the four-file split (`cv` / `design` / `locale` / `settings`) — don't merge into one file. The split is intentional so `cv.yaml` is the "what" and the other three are the "how it looks".
-- `settings.yaml` must keep `render_command: {}` (even empty). Without it, rendercv 2.8 throws `KeyError: 'render_command'` whenever `--output-folder` is used.
-- Pinned to `rendercv[full]==2.8` on Python 3.12, invoked via `uvx`. Bumping the version: update every workspace's `package.json` plus the generator template at `turbo/generators/templates/_meta/package.json.hbs`.
-- All `output/` directories are gitignored globally via `**/output/`. If you ever want a specific rendered file tracked (e.g. the primary PDF for linking from the GitHub profile), add an exception in `.gitignore` and use `git add -f` for that file.
+## Troubleshooting
 
-For broader repo context (the GitHub profile README, etc.) see `AGENTS.md` at the repo root.
+**`KeyError: 'render_command'` on render.** `settings.yaml` is missing `render_command: {}`. Add it (even empty) — required by rendercv 2.8 whenever `--output-folder` is used. The primary template already has it.
+
+**Font not applying.** Check the workspace has a `fonts/` directory (`ls <workspace>/fonts/`) and that the family name in `design.yaml` matches the font's metadata exactly — e.g. `Geist Mono` (with space), not `GeistMono`. To inspect a font's family name:
+
+```bash
+uvx --from fonttools ttx -t name fonts/<file>.ttf
+# read nameID="1" — that's the family name rendercv expects
+```
+
+**Page count exploded after a design change.** Wider fonts, larger body size, or extra spacing all eat vertical space. Levers in `design.yaml` (most impactful first):
+
+- `typography.font_size.body` — drop from `10pt` → `9.5pt`
+- `typography.line_spacing` — tighten from `0.85em` → `0.78em`
+- `sections.space_between_regular_entries` — `0.42cm` → `0.28cm`
+- `entries.{summary,highlights}.space_above` and `highlights.space_between_items` — drop to `0.05cm`
+- `page.{top,bottom,left,right}_margin` — last resort
+
+**Stale rendered output.** Run `pnpm --filter @resume/<name> clean` (or `pnpm resume:clean`) and re-render. There's no caching layer; if output doesn't reflect your edits, double-check that you saved.
+
+**`uvx` not found.** Install `uv`: `curl -LsSf https://astral.sh/uv/install.sh | sh`, then restart your shell. RenderCV runs via `uvx --python 3.12 --from 'rendercv[full]==2.8'` — bypassing this means version drift.
+
+**RenderCV is too slow.** First render downloads the package + Typst fonts (~10s); subsequent renders run from cache (~1s per resume).
+
+---
+
+For repo-wide context (GitHub profile README, agent skills, monorepo layout) see `AGENTS.md` at the repo root.

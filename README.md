@@ -13,12 +13,6 @@
 
 <img src="./assets/whoami.gif" width="100%" alt="terminal: type whoami, prints YAML bio"/>
 
-<br/>
-
-<a href="https://zrosenbauer.com"><img src="https://img.shields.io/badge/zrosenbauer.com-EC4899?style=for-the-badge" alt="Website"/></a>
-<a href="https://www.linkedin.com/in/zacrosenbauer/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&amp;logo=linkedin&amp;logoColor=white" alt="LinkedIn"/></a>
-<a href="https://joggr.ai"><img src="https://img.shields.io/badge/Joggr-7267EF?style=for-the-badge&amp;logoColor=white" alt="Joggr"/></a>
-
 </div>
 
 ---

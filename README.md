@@ -94,6 +94,6 @@
 
 <div align="center">
 
-<sub>📫 &nbsp; <a href="https://zrosenbauer.com"><b>zrosenbauer.com</b></a> &nbsp;·&nbsp; <a href="https://joggr.ai"><b>joggr.ai</b></a></sub>
+<sub><a href="https://zrosenbauer.com"><b>zrosenbauer.com</b></a> &nbsp;·&nbsp; <a href="https://joggr.ai"><b>joggr.ai</b></a></sub>
 
 </div>

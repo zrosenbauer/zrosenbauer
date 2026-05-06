@@ -1,0 +1,22 @@
+{
+  "name": "zrosenbauer",
+  "version": "0.0.0",
+  "private": true,
+  "description": "GitHub profile README and personal monorepo (CVs, etc.)",
+  "packageManager": "pnpm@10.33.0",
+  "scripts": {
+    "resume:render": "pnpm -r --filter '@resume/*' run render",
+    "resume:watch": "pnpm -r --parallel --filter '@resume/*' run watch",
+    "resume:clean": "pnpm -r --filter '@resume/*' run clean",
+    "resume:new": "turbo gen resume",
+    "profile:gif": "vhs assets/whoami.tape"
+  },
+  "devDependencies": {
+    "turbo": "^2.3.3",
+    "@turbo/gen": "^2.3.3"
+  },
+  "engines": {
+    "node": ">=20",
+    "pnpm": ">=10"
+  }
+}

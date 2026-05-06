@@ -1,0 +1,5 @@
+settings:
+  current_date: today
+  bold_keywords: []
+  pdf_title: NAME - CV
+  render_command: {}

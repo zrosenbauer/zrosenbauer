@@ -1,0 +1,4 @@
+packages:
+  - "resumes/*"
+  - ".tailored/*"
+  - "!**/_template"

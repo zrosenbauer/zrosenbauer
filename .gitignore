@@ -1,0 +1,19 @@
+node_modules/
+.pnpm-store/
+.turbo/
+
+# Per-workspace render outputs (every resume writes to its own output/)
+**/output/
+**/rendercv_output/
+
+# Tailored copies of resume templates (cloned per-application; never committed)
+.tailored/
+
+# Local secrets
+.env
+.env.local
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/

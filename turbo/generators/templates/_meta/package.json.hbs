@@ -1,0 +1,11 @@
+{
+  "name": "@resume/{{name}}",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Resume {{name}} (cloned from resumes/{{template}})",
+  "scripts": {
+    "render": "uvx --python 3.12 --from 'rendercv[full]==2.8' rendercv render cv.yaml --design design.yaml --locale-catalog locale.yaml --settings settings.yaml --output-folder output",
+    "watch": "uvx --python 3.12 --from 'rendercv[full]==2.8' rendercv render cv.yaml --design design.yaml --locale-catalog locale.yaml --settings settings.yaml --output-folder output --watch",
+    "clean": "rm -rf output"
+  }
+}

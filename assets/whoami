@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# whoami output — used by assets/whoami.tape to render the README banner GIF.
+# Edit these lines to update the banner; then run `pnpm profile:gif`.
+#
+# Note: every value starts with a 2-cell emoji so columns visually align in
+# monospace terminals. If you remove an emoji, remove all of them — mixing
+# emoji and non-emoji values will visually misalign.
+echo "location: 🗽 NYC"
+echo "job:      💼 CTO & Co-Founder @ Joggr"
+echo "stack:    🔧 TypeScript · Rust · Claude Code"
+echo "fun:      🥊 martial arts · 🚜 antique tractors · 🐶 Mocha"

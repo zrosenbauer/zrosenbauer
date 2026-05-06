@@ -23,26 +23,82 @@
 
 ---
 
-### `~/shipping`
+### `~/work`
 
 > Building **[Joggr](https://joggr.ai)** — the developer toolkit for AI coding agents. One CLI that gives Claude Code, Cursor, Copilot, and Codex the same foundation: your context, your standards, your guardrails.
 
 ---
 
+### `~/oss`
+
+- [**kidd**](https://github.com/joggrdocs/kidd) — opinionated CLI framework for Node.js. Convention over configuration, end-to-end type safety.
+- [**lauf**](https://github.com/zrosenbauer/lauf) — discover, validate, and execute TypeScript scripts with Zod-powered arguments.
+- [**namescout**](https://github.com/zrosenbauer/namescout) — npm package naming toolkit: generate names, check availability, detect squatters, vibe-check the registry.
+- [**viteval**](https://github.com/viteval/viteval) — next-generation LLM evaluation framework powered by Vitest.
+- [**voltagent**](https://github.com/voltagent/voltagent) — open-source TypeScript framework for building, observing, and shipping AI agents. _(contributor)_
+- [**zpress**](https://github.com/joggrdocs/zpress) — zero-effort, turnkey documentation sites for monorepos.
+
+---
+
 ### `~/stack`
 
-<p>
-<img src="https://skillicons.dev/icons?i=ts,rust,py,bash,nodejs,react,nextjs,tailwind,vite,electron,tauri,gcp,postgres,docker,vercel,vscode&perline=8" alt="Stack"/>
+<table>
+<tr>
+<th>Languages</th>
+<th>Web</th>
+<th>Native</th>
+</tr>
+<tr>
+<td valign="top">
+<img src="https://skillicons.dev/icons?i=ts" height="48" alt="TypeScript"/>
+<img src="https://skillicons.dev/icons?i=rust" height="48" alt="Rust"/>
+<img src="https://skillicons.dev/icons?i=py" height="48" alt="Python"/>
 <br/>
+<img src="https://skillicons.dev/icons?i=bash" height="48" alt="Bash"/>
+</td>
+<td valign="top">
+<img src="https://skillicons.dev/icons?i=nodejs" height="48" alt="Node.js"/>
 <img src="https://raw.githubusercontent.com/zrosenbauer/art/main/art/skillicons/fastify/fastify.svg" height="48" alt="Fastify"/>
+<img src="https://skillicons.dev/icons?i=react" height="48" alt="React"/>
+<br/>
+<img src="https://skillicons.dev/icons?i=nextjs" height="48" alt="Next.js"/>
 <img src="https://raw.githubusercontent.com/zrosenbauer/art/main/art/skillicons/tanstack_start/tanstack_start.svg" height="48" alt="TanStack Start"/>
+<img src="https://skillicons.dev/icons?i=tailwind" height="48" alt="Tailwind"/>
+<br/>
+<img src="https://skillicons.dev/icons?i=vite" height="48" alt="Vite"/>
+</td>
+<td valign="top">
+<img src="https://skillicons.dev/icons?i=electron" height="48" alt="Electron"/>
+<img src="https://skillicons.dev/icons?i=tauri" height="48" alt="Tauri"/>
+</td>
+</tr>
+<tr>
+<th>AI</th>
+<th>Infra</th>
+<th>Tools</th>
+</tr>
+<tr>
+<td valign="top">
 <img src="https://raw.githubusercontent.com/zrosenbauer/art/main/art/skillicons/voltagent/voltagent.svg" height="48" alt="VoltAgent"/>
 <img src="https://raw.githubusercontent.com/zrosenbauer/art/main/art/skillicons/vercel_ai_sdk/vercel_ai_sdk.svg" height="48" alt="Vercel AI SDK"/>
+</td>
+<td valign="top">
+<img src="https://skillicons.dev/icons?i=gcp" height="48" alt="GCP"/>
 <img src="https://raw.githubusercontent.com/zrosenbauer/art/main/art/skillicons/pulumi/pulumi.svg" height="48" alt="Pulumi"/>
+<img src="https://skillicons.dev/icons?i=postgres" height="48" alt="Postgres"/>
+<br/>
+<img src="https://skillicons.dev/icons?i=docker" height="48" alt="Docker"/>
+<img src="https://skillicons.dev/icons?i=vercel" height="48" alt="Vercel"/>
+</td>
+<td valign="top">
 <img src="https://raw.githubusercontent.com/zrosenbauer/art/main/art/skillicons/claude_code/claude_code.svg" height="48" alt="Claude Code"/>
 <img src="https://raw.githubusercontent.com/zrosenbauer/art/main/art/skillicons/opencode/opencode.svg" height="48" alt="OpenCode"/>
+<img src="https://skillicons.dev/icons?i=vscode" height="48" alt="VS Code"/>
+<br/>
 <img src="https://raw.githubusercontent.com/zrosenbauer/art/main/art/skillicons/wezterm/wezterm.svg" height="48" alt="WezTerm"/>
-</p>
+</td>
+</tr>
+</table>
 
 ---
 

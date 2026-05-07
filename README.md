@@ -25,11 +25,11 @@
 
 ### `~/oss`
 
-- [**kidd**](https://github.com/joggrdocs/kidd) — opinionated CLI framework for Node.js. Convention over configuration, end-to-end type safety.
+- [**voltagent**](https://github.com/voltagent/voltagent) — open-source TypeScript framework for building, observing, and shipping AI agents. _(contributor)_
+- [**kidd**](https://github.com/joggrdocs/kidd) — opinionated CLI framework for Node.js, built in TUI framework (including TUI storybook).
+- [**viteval**](https://github.com/viteval/viteval) — next-generation LLM evaluation framework powered by Vitest.
 - [**lauf**](https://github.com/zrosenbauer/lauf) — discover, validate, and execute TypeScript scripts with Zod-powered arguments.
 - [**namescout**](https://github.com/zrosenbauer/namescout) — npm package naming toolkit: generate names, check availability, detect squatters, vibe-check the registry.
-- [**viteval**](https://github.com/viteval/viteval) — next-generation LLM evaluation framework powered by Vitest.
-- [**voltagent**](https://github.com/voltagent/voltagent) — open-source TypeScript framework for building, observing, and shipping AI agents. _(contributor)_
 - [**zpress**](https://github.com/joggrdocs/zpress) — zero-effort, turnkey documentation sites for monorepos.
 
 ---

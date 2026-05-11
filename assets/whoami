@@ -2,10 +2,11 @@
 # whoami output — used by assets/whoami.tape to render the README banner GIF.
 # Edit these lines to update the banner; then run `pnpm profile:gif`.
 #
-# Note: every value starts with a 2-cell emoji so columns visually align in
-# monospace terminals. If you remove an emoji, remove all of them — mixing
-# emoji and non-emoji values will visually misalign.
+# Stack line uses Nerd Font (GeistMono Nerd Font) devicon glyphs:
+#    U+E628  = nf-dev-typescript
+#    U+E7A8  = nf-dev-rust
+# Other lines keep emoji for portability. If you swap fonts, fall back to emoji.
 echo "location: 🗽 NYC"
 echo "job:      💼 CTO & Co-Founder @ Joggr"
-echo "stack:    🔧 TypeScript · Rust · Claude Code"
+printf 'stack:    \xee\x98\xa8 TypeScript · \xee\x9e\xa8 Rust · 🤖 Claude Code\n'
 echo "fun:      🥊 martial arts · 🚜 antique tractors · 🐶 Mocha"

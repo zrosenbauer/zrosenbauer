@@ -16,14 +16,14 @@
 </div>
 
 <details open>
-<summary><h4><code>~/work</code></h4></summary>
+<summary><code>~/work</code></summary>
 
 > Building **[Joggr](https://joggr.ai)** — the developer toolkit for AI coding agents. One CLI that gives Claude Code, Cursor, Copilot, and Codex the same foundation: your context, your standards, your guardrails.
 
 </details>
 
 <details>
-<summary><h4><code>~/oss</code></h4></summary>
+<summary><code>~/oss</code></summary>
 
 - [**voltagent**](https://github.com/voltagent/voltagent) — open-source TypeScript framework for building, observing, and shipping AI agents. _(contributor)_
 - [**kidd**](https://github.com/joggrdocs/kidd) — opinionated CLI framework for Node.js, built in TUI framework (including TUI storybook).
@@ -35,7 +35,7 @@
 </details>
 
 <details>
-<summary><h4><code>~/stack</code></h4></summary>
+<summary><code>~/stack</code></summary>
 
 <table>
 <tr>
@@ -98,7 +98,7 @@
 </details>
 
 <details>
-<summary><h4><code>~/about</code></h4></summary>
+<summary><code>~/about</code></summary>
 
 - 💍 Married my soulmate **Sarah**
 - 🐶 Dad to a wonderful puppers named **Mocha**

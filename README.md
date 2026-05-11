@@ -15,7 +15,7 @@
 
 </div>
 
-<details open>
+<details>
 <summary>📁 <code>~/work</code></summary>
 
 > Building **[Joggr](https://joggr.ai)** — the developer toolkit for AI coding agents. One CLI that gives Claude Code, Cursor, Copilot, and Codex the same foundation: your context, your standards, your guardrails.

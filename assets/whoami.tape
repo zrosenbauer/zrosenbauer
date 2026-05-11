@@ -13,7 +13,7 @@ Set Shell zsh
 Set FontFamily "Geist Mono"
 Set FontSize 22
 Set Width 1280
-Set Height 380
+Set Height 285
 Set TypingSpeed 65ms
 Set Padding 32
 Set WindowBar Colorful

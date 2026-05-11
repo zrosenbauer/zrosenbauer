@@ -15,6 +15,8 @@
 
 </div>
 
+---
+
 <details>
 <summary>📁 <code>~/work</code></summary>
 

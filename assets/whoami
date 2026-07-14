@@ -7,6 +7,6 @@
 #    U+E7A8  = nf-dev-rust
 # Other lines keep emoji for portability. If you swap fonts, fall back to emoji.
 echo "location: 🗽 NYC"
-echo "job:      💼 CTO & Co-Founder @ Joggr"
+echo "job:      💼 Head of Engineering @ Holly"
 printf 'stack:    \xee\x98\xa8 TypeScript · \xee\x9e\xa8 Rust · 🤖 Claude Code\n'
 echo "fun:      🥊 martial arts · 🚜 antique tractors · 🐶 Mocha"

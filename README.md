@@ -20,7 +20,7 @@
 <details>
 <summary>📁 <code>~/work</code></summary>
 
-> Building **[Joggr](https://joggr.ai)** — the developer toolkit for AI coding agents. One CLI that gives Claude Code, Cursor, Copilot, and Codex the same foundation: your context, your standards, your guardrails.
+> **Head of Engineering @ [Holly](https://hollygov.com)** — building modern software for local government.
 
 </details>
 
@@ -116,6 +116,6 @@
 
 <div align="center">
 
-<sub><a href="https://zrosenbauer.com"><b>zrosenbauer.com</b></a> &nbsp;·&nbsp; <a href="https://joggr.ai"><b>joggr.ai</b></a></sub>
+<sub><a href="https://zrosenbauer.com"><b>zrosenbauer.com</b></a> &nbsp;·&nbsp; <a href="https://hollygov.com"><b>hollygov.com</b></a></sub>
 
 </div>

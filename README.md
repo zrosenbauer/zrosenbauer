@@ -27,12 +27,19 @@
 <details>
 <summary>📁 <code>~/oss</code></summary>
 
+🚜 **[The Byte Farm](https://github.com/thebytefarm)** — a little farm growing open source, one byte at a time:
+
+- [**hopper**](https://github.com/thebytefarm/hopper) — an IDE built for agents. Plan, run, and review code with your fleet by your side. _(coming soon)_
+- [**ciderpress**](https://github.com/thebytefarm/ciderpress) — opinionated, zero-config docs framework for monorepos. Point it at your markdown.
+- [**maltty**](https://github.com/thebytefarm/maltty) — full-featured CLI framework for Node.js. Prebuilt components and a Storybook for the terminal.
+- [**marxml**](https://github.com/thebytefarm/marxml) — fast markdown + XML query and mutation. Rust core, JS bindings.
+
+Elsewhere:
+
 - [**voltagent**](https://github.com/voltagent/voltagent) — open-source TypeScript framework for building, observing, and shipping AI agents. _(contributor)_
-- [**kidd**](https://github.com/joggrdocs/kidd) — opinionated CLI framework for Node.js, built in TUI framework (including TUI storybook).
 - [**viteval**](https://github.com/viteval/viteval) — next-generation LLM evaluation framework powered by Vitest.
 - [**lauf**](https://github.com/zrosenbauer/lauf) — discover, validate, and execute TypeScript scripts with Zod-powered arguments.
 - [**namescout**](https://github.com/zrosenbauer/namescout) — npm package naming toolkit: generate names, check availability, detect squatters, vibe-check the registry.
-- [**zpress**](https://github.com/joggrdocs/zpress) — zero-effort, turnkey documentation sites for monorepos.
 
 </details>
 
